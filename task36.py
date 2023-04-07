@@ -21,21 +21,13 @@
 # 5 10 15 20 25 30
 # 6 12 18 24 30 36
 
-song = 'пара-ра-рам рам-пам-папам па-ра-па-да'
-print(song)
-print(type(song))
-
-song = song.split()
-print(song)
-print(song[1])
-print(len(song[1]))
-for i in range(len(song)):
-    print(len(song[i]))             # пишем длину отдельных фраз
 
 
-print(song[1])
-print(type(song[1]))
-print(song[1][1])
+def print_operation_table(operation, num_rows=6, num_columns=6):
+    for i in range(1, num_rows+1):
+        for j in range(1, num_columns+1):
+            print(operation(i, j), end='  ')
+        print()
 
-count = [3]
-print(count)
+
+print_operation_table(lambda x, y: x * y)
