@@ -25,7 +25,7 @@ song = input()
 
 song = song.split()
 # print(song)
-vovels = 'а о и ы у э'
+vovels = 'а о и ы у э я ю ё е'
 vovels = vovels.split()
 count = 0
 list1 = [None]*(len(song))
